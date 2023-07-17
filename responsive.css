@@ -1,8 +1,18 @@
+/*-----Shared styles-----*/
 *{
     padding: 0px;
     margin: 0px;
     font-family: 'Mochiy Pop One', sans-serif;
     font-family: 'Poppins', sans-serif;
+}
+.btn-primary {
+    border: none;
+    border-radius: 8px;
+    background-color: orange;
+    padding: 14px 25px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
 }
 /*-----header styles------*/
 header {
@@ -44,4 +54,33 @@ nav li a{
 }
 .banner-description {
     color: rgb(99, 99, 99);
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+.banner img {
+    margin-top: 32px;
+    width: 100%;
+}
+.banner {
+    margin-top: 62px;
+}
+
+/* responsive media queries */
+/*mobile devices*/
+@media screen and (max-width: 576px) {
+    header {
+        padding: 20px;
+    }
+    nav {
+        flex-direction: column;
+    }
+}
+/* tablet or medium devices */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    nav {
+        flex-direction: column;
+    }
+    header {
+        padding: 50px;
+    }
 }
