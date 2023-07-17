@@ -4,3 +4,44 @@
     font-family: 'Mochiy Pop One', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
+/*-----header styles------*/
+header {
+    background-color: antiquewhite;
+    padding: 50px 240px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul {
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 28px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+nav li a{
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+}
+.nav-taitle {
+    font-size: 2rem;
+}
+
+/*-------banner styles----*/
+.banner-content {
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: black;
+}
+.banner-description {
+    color: rgb(99, 99, 99);
+}
