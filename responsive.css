@@ -86,11 +86,14 @@ main{
 }
 .teams-content {
     padding-left: 70px;
-    padding-right: 70px;
+}
+.teams-content .teams-title {
+    position: static;
 }
 .teams-content h1{
     font-size: 32px;
     padding-bottom: 12px;
+    line-height: 0px;
 }
 .teams-title .Quick-list {
     color: rgb(105, 100, 91);
@@ -108,11 +111,63 @@ main{
     padding-bottom: 22px;
 }
 
+/* Features section style */
+.features {
+    margin-top: 70px;
+    display: flex;
+    gap: 100px;
+}
+.feature-img img{
+    width: 400px;
+    margin-left: 50px;
+}
+.card .text-light-gray, .text-light-gray{
+    font-size: 14px;
+}
+.features-content .card {
+    background-color: aliceblue;
+    padding: 12px;
+    margin-bottom: 22px;
+    border-radius: 8px;
+}
+.features-content .section-title {
+    font-size: 38px;
+    margin-bottom: 16px;
+    line-height: 48px;
+}
+.features-content .text-light-gray-2 {
+    margin-bottom: 22px;
+    font-size: 16px;
+}
+.features-content .section-title {
+    border-left: 5px solid orange;
+    padding-left: 14px;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+.ten-years-badge {
+    border-radius: 8px;
+    background-color: orange;
+    color: white;
+    width: 192px;
+    padding: 22px;
+    position: relative;
+    bottom: 60px;
+}
+.ten-years-badge h2 {
+    font-size: 27px;
+    text-align: center;
+}
+.ten-years-badge p{
+    text-align: center;
+}
+
+
 /* facts section */
 .facts, .section-title {
     padding-top: 42px;
 }
-.facts, .text-light-gray {
+.facts .text-light-gray {
     padding-top: 12px;
     padding-bottom: 52px;
 }
@@ -157,10 +212,15 @@ main{
     }
     nav, .teams-container, 
     .facts-card-container,
-    .sponsors-img-container
+    .sponsors-img-container,
+    .features
     {
         flex-direction: column;
         align-items: center;
+    }
+    .feature-img img{
+        width: 100%;
+        margin-left: 0;
     }
     .teams-img-container {
         grid-template-columns: 1fr;
@@ -178,6 +238,10 @@ main{
         align-items: center;
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .teams-content .teams-title {
+        position: static;
+        max-width: 200px;
     }
 }
 /* tablet or medium devices */
