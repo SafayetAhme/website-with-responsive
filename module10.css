@@ -1,0 +1,195 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*---nav and header section --*/
+.nav-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul {
+    display: flex;
+    list-style: none;
+}
+ul li a{
+    padding-left: 22px;
+    text-decoration: none;
+    color: black;
+}
+.nav-and-header-section {
+    padding: 32px 100px;
+}
+.header-section {
+    display: flex;
+    align-items: center;
+    gap: 75px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.header-text h1 {
+    font-size: 42px;
+}
+.header-text p {
+    font-size: 16px;
+    padding-bottom: 22px;
+    color: rgb(80, 73, 73);
+}
+.header-text .btn {
+    background-color: rgb(196, 78, 32);
+    border: none;
+    border-radius: 40px;
+    padding: 8px 18px;
+    color: white;
+}
+
+/*  -tag -company-section --*/
+main {
+    padding: 20px 130px;
+}
+.company-logo img{
+    width: 100px;
+    height: 30px;
+}
+.company-logo {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid gray;
+    padding: 32px;
+}
+
+/*  --product-callection-section --*/
+.product-callection h2{
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 40px;
+}
+.all-cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+    gap: 22px;
+    background-color: rgb(255, 255, 255);
+}
+.card {
+    width: 280px;
+    padding: 16px;
+    border-radius: 9px;
+    background-color: rgb(255, 248, 248);
+}
+.card img {
+    width: 280px;
+}
+.card h3 {
+    font-size: 28px;
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+.card h5 {
+    font-size: 22px;
+    font-weight: 300;
+}
+.card .star {
+    width: 130px;
+    padding-top: 6px;
+    padding-bottom: 3px;
+}
+.see {
+    padding-top: 16px;
+    text-align: end;
+}
+
+/*  --product-featured-section --*/
+.Featured-products {
+    padding: 62px 136px;
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    align-items: center;
+}
+.product-text h1{
+    font-size: 32px;
+    padding-bottom: 12px;
+}
+.product-text p {
+    padding-bottom: 19px;
+}
+.product-text .btn {
+    background-color: rgb(204, 38, 38);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+}
+
+/*  --product-featured-section --*/
+.link img{
+    width: 30px;
+    padding-left: 12px;
+}
+.footer {
+    padding: 60px;
+    color: white;
+    background-color: rgb(4, 19, 36);
+}
+.footer-text {
+    text-align: center;
+}
+.footer-text h2, p{
+    padding-bottom: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  header section responsive  */
+@media screen and (max-width: 576px) {
+    .header-section {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 32px 40px;
+    }
+    .header-img img {
+        width: 350px;
+    }
+    .nav-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .company-logo {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .company-logo img{
+        flex-wrap: wrap;
+        padding-bottom: 22px;
+    }
+    .all-cards {
+        grid-template-columns: repeat(1,1fr);
+    }
+    main,
+    .nav-and-header-section,
+    .see {
+        padding: 10px 29px;
+    }
+    .Featured-products {
+        padding: 62px 36px;
+        gap: 30px;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .Featured-products .product-img img {
+        width: 320px;
+    }
+    
+}
+
